@@ -14,7 +14,7 @@ public class NFTCollectionsElement {
     private String contract_address;
     private String token_id;
     private String metadata_url;
-    private String metadata;
+    private MetadataFromCollection metadata;
     private String file_url;
     private String animation_url;
     private String cached_file_url;

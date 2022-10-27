@@ -2,7 +2,9 @@ package com.example.backend.service;
 
 
 import com.example.backend.model.MetadataFromCollection;
+import com.example.backend.model.NFTCollectionsElement;
 import com.example.backend.model.NFTCollectionsResponseElement;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
@@ -17,7 +19,7 @@ public class CollectionsService {
 
 
 
-     public List<NFTCollectionsResponseElement> getNftsByQuery(String query){
+     public List<NFTCollectionsElement> getNftsByQuery(String query){
          NFTCollectionsResponseElement responseElement =
                  client.get()
                          .uri("nfts?chain=ethereum&include=metadata&Authorization=d4f5003c-bf80-4a38-8b65-444e985d8919" + query)
@@ -25,7 +27,7 @@ public class CollectionsService {
                          .toEntity(NFTCollectionsResponseElement.class)
                          .block()
                          .getBody();
-         return responseElement.getResult();
+         return responseElement.getNfts();
      }
 
     public MetadataFromCollection getAllNfts() {

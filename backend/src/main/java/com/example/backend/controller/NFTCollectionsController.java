@@ -1,6 +1,7 @@
 package com.example.backend.controller;
 
 import com.example.backend.model.MetadataFromCollection;
+import com.example.backend.model.NFTCollectionsElement;
 import com.example.backend.model.NFTCollectionsResponseElement;
 import com.example.backend.service.CollectionsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +29,7 @@ public class NFTCollectionsController {
     }
 
     @GetMapping(path="{query}")
-    public List<NFTCollectionsResponseElement> getNftsByQuery(@PathVariable String query){
+    public List<NFTCollectionsElement> getNftsByQuery(@PathVariable String query){
         return collectionsService.getNftsByQuery(query);
     }
 

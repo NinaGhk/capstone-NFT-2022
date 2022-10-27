@@ -11,5 +11,5 @@ import java.util.List;
 @NoArgsConstructor
 public class NFTCollectionsResponseElement {
 
-    private List<NFTCollectionsResponseElement> result;
+    private List<NFTCollectionsElement> nfts;
 }
