@@ -8,8 +8,6 @@ type AppPageProps = {}
 function AppPage(props: AppPageProps){
 
     const navigate = useNavigate();
-    /*const navigateToHomePage = ()=>{
-        navigate("/HomePage")*/
 
 
     const handleClick =()=>{
@@ -28,6 +26,3 @@ function AppPage(props: AppPageProps){
 
 }
 export default AppPage;
-/* <body>
-            <a href="/">HomePage</a>
-            </body>*/
