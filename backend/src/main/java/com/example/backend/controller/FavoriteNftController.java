@@ -16,7 +16,7 @@ public class FavoriteNftController {
     @Autowired
     public FavoriteNftController(FavoriteNftService favoriteNftService){this.favoriteNftService = favoriteNftService;}
 
-    @PostMapping("/api/nfts")
+    @PostMapping
     public FavoriteNft addNft(@RequestBody FavoriteNft favoriteNft){return favoriteNftService.addNft(favoriteNft);}
 
     @GetMapping
