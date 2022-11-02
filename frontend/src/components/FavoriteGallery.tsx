@@ -11,9 +11,9 @@ export default  function FavoriteGallery(props:FavoriteGalleryProps){
 
     return (
      <div className ="favoritecard">
-         {props.favoriteNfts.map((FavoriteNft) =>
+         {props.favoriteNfts.map((favoriteNft) =>
              <div className={"favoritecard"}>
-                 <FavoriteCard favoriteNft={FavoriteNft}/>
+                 <FavoriteCard favoriteNft={favoriteNft}/>
              </div>)}
      </div>
     )}

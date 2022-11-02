@@ -18,25 +18,18 @@ function FavoritePage (props: FavoriteProps){
     useEffect(()=>{props.getAllFavorite()},[])
 
 
-
-    const params = useParams()
-    const id = params.id
-
-    if(id === undefined){
-        return (<> No id given</>);
-    }
-
-    const navigate = useNavigate();
-
+    /*const navigate = useNavigate();
 
     const handleClick =()=>{
-        navigate("/")
-    }
+        navigate("/")*/
+
     return(
         <Container>
             <Row className = "favorite">
 
                 <FavoriteGallery  favoriteNfts={props.favoriteNfts}/>
+                <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2021%2F11%2Fbeeple-human-one-christies-auction-1.jpg?q=75&w=800&cbr=1&fit=max"/>
+
             </Row>
         </Container>
     );

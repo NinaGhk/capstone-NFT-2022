@@ -14,7 +14,7 @@ export  default function FavoriteCard(props: FavoriteCardProps){
                 <h3>{props.favoriteNft.name}</h3>
                 <h3>{props.favoriteNft.description}</h3>
                 <p>{props.favoriteNft.auctionprice}</p>
-                <img src ={props.favoriteNft.image}/>
+                <img src ={props.favoriteNft.image} alt={props.favoriteNft.image}/>
 
             </Link>
 
