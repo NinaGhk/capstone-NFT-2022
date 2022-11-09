@@ -17,5 +17,3 @@ export default  function FavoriteGallery(props:FavoriteGalleryProps){
              </div>)}
      </div>
     )}
-
-        // line 17 <p>{FavoriteNft.name}</p>)}

@@ -5,7 +5,6 @@ import {FavoriteNft} from "../model/FavoriteNft";
 
 export default function useFavoriteNfts(){
 
-
     const [favoriteNfts,setFavoriteNfts] =useState([])
 
     const  getAllNfts =()=> {
