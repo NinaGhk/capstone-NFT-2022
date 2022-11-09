@@ -1,0 +1,18 @@
+.card-img-top {
+    width: 300px;
+    height: 300px;
+}
+.favorite {
+    background-color: indigo;
+}
+
+.card-name{
+    color:firebrick;
+    text-align: right;
+}
+
+.card-text {
+    color:firebrick;
+    text-align: right;
+}
+

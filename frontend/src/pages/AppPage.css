@@ -4,18 +4,13 @@
     background-image: url("https://en.cryptonomist.ch/wp-content/uploads/2022/08/nft-hacker-1140x600.jpg.webp");
     background-size: cover;
     z-index: 1000;
-    height: 1200vh;
-    /*margin-top: 50px;*/
-    min-width: 1600px;
-    background-repeat:no-repeat;
-    display: flex;
+    height: 1100vh;
+    min-width: 800px;
     flex-direction: column;
     align-items: center;
+    background-attachment: fixed;
 }
 .App-header{
-    /*position: absolute;
-    z-index: 1000;
-    color: blueviolet;
-    left: 6rem;*/
+
 }
 
