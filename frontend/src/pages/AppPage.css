@@ -10,7 +10,18 @@
     align-items: center;
     background-attachment: fixed;
 }
-.App-header{
+.App-title{
+    letter-spacing: 55px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px chartreuse;
+    font-style: italic;
+    border-width: 25px 10px 4px 35px;
+    border-width: 400px 600px;
+    border: 1px solid;
+    border: blueviolet;
+    transform: rotateX(30deg);
+
+    background-color: black;
 
 }
 

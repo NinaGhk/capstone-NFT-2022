@@ -10,6 +10,10 @@ import Carousel from "../components/Carousel";
 type FavoriteProps ={
     favoriteNfts: FavoriteNft[];
     getAllFavorite: ()=>void
+    deleteNft:(id:string) =>void;
+    markHeartAsFavorite:(favoriteNfts:FavoriteNft) =>void
+
+
 }
 
 function FavoritePage (props: FavoriteProps){
@@ -21,12 +25,9 @@ function FavoritePage (props: FavoriteProps){
 
     return(
         <Container>
-            <Container/>
             <Carousel/>
             <Row className = "favorite">
-
-                <FavoriteGallery  favoriteNfts={props.favoriteNfts}/>
-
+                <FavoriteGallery  favoriteNfts={props.favoriteNfts} deleteNft={props.deleteNft}  markHeartAsFavorite={props.markHeartAsFavorite}/>
             </Row>
         </Container>
     );
