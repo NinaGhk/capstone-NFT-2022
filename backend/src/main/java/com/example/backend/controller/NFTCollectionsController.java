@@ -11,7 +11,8 @@ import java.util.List;
 @RequestMapping("/api/nft")
 public class NFTCollectionsController {
 
-    private CollectionsService collectionsService;
+    private final CollectionsService collectionsService;
+
 
     @Autowired
     public NFTCollectionsController(CollectionsService service){

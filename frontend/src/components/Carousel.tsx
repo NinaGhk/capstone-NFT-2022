@@ -2,43 +2,43 @@ import "./Carousel.css";
 
 type CarouselProps={
 
+
+
 }
 
 export default function Carousel(props:CarouselProps) {
     return (
-    <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
-        <div className="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active"
-                    aria-current="true" aria-label="Slide 1" ></button>
-            <div className="carousel-item active">
-                <img src={"https://i.seadn.io/gae/oE-jyaS5RcIRkjVRqJ8nqYLN8U5G6wU5gWqBcKI_n3aUxu17TA24t2CK6ZBKxmQsKOW6rKdflexBG9EpbtEiSqB4wiw-Qcx6-qzyhg?auto=format&w=512"} className="d-block w-100" alt="..."/>
-            </div>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-        </div>
-        <div className="carousel-inner">
 
-            <div className="carousel-item">
-                <img src={"https://i.seadn.io/gae/c2YKTRh5PCNXIwDxMqPq2I1nTeYjUNCS3HS1Z-REd6H0UaXghXaD5Qd-BJjK8_V31U6sr39G_5zNHPN6A6asBvKHWwS9UT0fiN-C?auto=format&w=512"} className="d-block w-100" alt="..."/>
-            </div>
-            <div className="carousel-item">
-                <img src="..." className="d-block w-100" alt="..."/>
+    <div className="gallery0">
+        <a target="_blank" href="img_forest.jpg">
+            <img src="https://i.seadn.io/gae/c2YKTRh5PCNXIwDxMqPq2I1nTeYjUNCS3HS1Z-REd6H0UaXghXaD5Qd-BJjK8_V31U6sr39G_5zNHPN6A6asBvKHWwS9UT0fiN-C?auto=format&w=512" alt="" width="150" height="200"/>
+        </a>
+
+        <div className="gallery1">
+            <a target="_blank" href="img_forest.jpg">
+                <img src="https://img.seadn.io/files/bf02cae05933bf8651d2d945f92718c5.png?auto=format&fit=max&w=3840" alt="" width="150" height="200"/>
+            </a>
+
+            <div className="gallery2">
+                <a target="_blank" href="img_forest.jpg">
+                    <img src="https://img.seadn.io/files/1776c7c0b5517c1c298403a6b090ab6a.png?fit=max&w=1000" alt="" width="150" height="200"/>
+                </a>
+
+                <div className="gallery3">
+                    <a target="_blank" href="img_forest.jpg">
+                        <img src="https://i.seadn.io/gae/xLJ5y1XipNBH2vWsz0aVeIS-VKIMVw1p5kgpC4bdpWss_WzPYXqPtbcE7cDV2N0ZuOK4B73rVRE8HO0WPs8UUjVO09HNKYl8cKvM?auto=format&w=1000" alt="" width="150" height="200"/>
+                    </a>
+
+                    <div className="gallery4">
+                        <a target="_blank" href="img_forest.jpg">
+                            <img src="https://i.seadn.io/gae/EjU-_AkDc4rs0KN38FIdsaQwJ-AFN57Af_2jk-_dTi-SwTNi5Pa9P3KVyIO7VCJ9m4BclD7ukvs5QxPQVmOy2JL1Vk0161upmAh8Cw?auto=format&w=1000" alt="" width="150" height="200"/>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-        </button>
-    </div>)
-};
+    </div>
+    )};
 
 
 
