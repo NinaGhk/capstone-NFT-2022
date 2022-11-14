@@ -1,4 +1,5 @@
 package com.example.backend.controller;
+
 import com.example.backend.model.NFTCollectionsElement;
 import com.example.backend.service.CollectionsService;
 import org.springframework.beans.factory.annotation.Autowired;
