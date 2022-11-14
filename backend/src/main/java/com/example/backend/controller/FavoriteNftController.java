@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/nfts")
+@RequestMapping("/api/nft/favorite")
 public class FavoriteNftController {
 
-    private FavoriteNftService favoriteNftService;
+    private final FavoriteNftService favoriteNftService;
 
     @Autowired
     public FavoriteNftController(FavoriteNftService favoriteNftService){this.favoriteNftService = favoriteNftService;}
@@ -22,8 +22,7 @@ public class FavoriteNftController {
     @GetMapping
     public List<FavoriteNft> getAllNfts (){return favoriteNftService.getAllNfts();}
 
-   /* @DeleteMapping("{name}")
-    public void deleteNft(@PathVariable String name){favoriteNftService.deleteNft(name);}*/
-
-}
+    @DeleteMapping ("/{id}")
+    public void deleteNft(@PathVariable String id) {favoriteNftService.deleteNft(id);}
+    };
 

@@ -2,7 +2,7 @@ import {Container, Row} from "react-bootstrap";
 import React, {useEffect, useState} from "react";
 import {FavoriteNft} from "../model/FavoriteNft";
 import FavoriteGallery from "../components/FavoriteGallery";
-import Carousel from "../components/Carousel";
+
 
 
 
@@ -10,8 +10,9 @@ import Carousel from "../components/Carousel";
 type FavoriteProps ={
     favoriteNfts: FavoriteNft[];
     getAllFavorite: ()=>void
+    addNft:()=>void
     deleteNft:(id:string) =>void;
-    markHeartAsFavorite:(favoriteNfts:FavoriteNft) =>void
+
 
 
 }
@@ -25,9 +26,10 @@ function FavoritePage (props: FavoriteProps){
 
     return(
         <Container>
-            <Carousel/>
+
             <Row className = "favorite">
-                <FavoriteGallery  favoriteNfts={props.favoriteNfts} deleteNft={props.deleteNft}  markHeartAsFavorite={props.markHeartAsFavorite}/>
+                <FavoriteGallery  favoriteNfts={props.favoriteNfts} getAllFavorite={props.getAllFavorite} addNft={props.addNft} deleteNft={props.deleteNft}/>
+
             </Row>
         </Container>
     );

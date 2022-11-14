@@ -6,24 +6,26 @@ import CreateFavoriteNft from "./CreateFavoriteNft";
 
 
 
-
 type FavoriteGalleryProps = {
     favoriteNfts:FavoriteNft[];
+    getAllFavorite: ()=>void
+    addNft:()=>void
     deleteNft:(id:string) =>void;
-    markHeartAsFavorite:(favoriteNfts:FavoriteNft) =>void
+
 }
 
 export default  function FavoriteGallery(props:FavoriteGalleryProps){
-
 
 
     return (
      <div className ="favoritecard">
          {props.favoriteNfts.map((favoriteNft) =>
              <div className={"favoritecard"}>
-                 <FavoriteCard favoriteNft={favoriteNft} deleteNft={props.deleteNft} markHeartAsFavorite={props.markHeartAsFavorite}/>
+                 <FavoriteCard favoriteNft={favoriteNft} getAllFavorite={props.getAllFavorite} addNft={props.addNft} deleteNft={props.deleteNft}/>
+
              </div>)}
 
          <CreateFavoriteNft/>
      </div>
     )}
+
