@@ -26,7 +26,7 @@ export default function App() {
                     <Routes>
                         <Route path="/" element={<AppPage/>}/>
                         <Route path ="/homepage" element = {<HomePage favoriteNft={favoriteNft}  />}/>
-                        <Route path ="/favorite" element ={<FavoritePage favoriteNfts={favoriteNfts} getAllFavorite={getAllNfts} deleteNft={deleteNft} markHeartAsFavorite={getAllNfts}/>}/>
+                        <Route path ="/favorite" element ={<FavoritePage favoriteNfts={favoriteNfts} getAllFavorite={getAllNfts} addNft={getAllNfts} deleteNft={deleteNft} />}/>
                         <Route path = "/collection" element = {<CollectionPage collectionNfts={collectionNfts} getAllCollection={getAllNfts}/>}/>
                         </Routes>
                 </HashRouter>
@@ -36,5 +36,7 @@ export default function App() {
         </div>
     );
 };
+
+//markHeartAsFavorite={getAllNfts}
 
 
