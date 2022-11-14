@@ -10,14 +10,22 @@
     font-family: "Times New Roman",Times, Serif;
     background-attachment: fixed;
 }
-.homePage-list{
+.homePage-list {
     display: flex;
     justify-content: space-evenly;
-    color:#61dafb;
+    color: #61dafb;
     width: 100%;
     top: 27px;
-    font-family: "Cambria Math" ;
+    font-family: "Cambria Math";
 }
+
+
+.button:hover.button{
+    background-color: #4776c2;
+    color: white;
+    transition-duration: 0.4s;
+}
+
 
 .badge text-bg-warning{
     badge-font-size: .99em;
@@ -26,6 +34,54 @@
     badge-padding-y: .35em;
     badge-padding-x: .65em;
     badge-border-radius: border-radius;
+}
+.favorite-name{
+    width: 22%;
+    font-size: 26px;
+    padding-left: 23px;
+    FONT-WEIGHT: 800;
+    font-style: oblique;
+    border-radius: 12px;
+    box-shadow: -1px 19px 14px 5px rgb(226 244 15 / 91%), -1px -8px 50px 7px rgb(120 40 176 / 77%);
+    background-color: #4776c2;
+}
+
+.collection-name{
+    width: 22%;
+    font-size: 26px;
+    padding-left: 2px;
+    FONT-WEIGHT: 600;
+    font-style: oblique;
+    border-radius: 12px;
+    box-shadow: -1px 19px 14px 5px rgb(226 244 15 / 91%), -1px -8px 50px 7px rgb(120 40 176 / 77%);
+    background-color: #4776c2;
+
+}
+
+.search-name {
+    width: 22%;
+    font-size: 26px;
+    padding-left: 23px;
+    FONT-WEIGHT: 400;
+    font-style: oblique;
+    border-radius: 12px;
+    box-shadow: -1px 19px 14px 5px rgb(226 244 15 / 91%), -1px -8px 50px 7px rgb(120 40 176 / 77%);
+    background-color: #4776c2;
+    opacity: 0.6;
+    cursor: not-allowed
+}
+
+.logIn-name{
+    width: 22%;
+    font-size: 26px;
+    padding-left: 23px;
+    FONT-WEIGHT: 400;
+    font-style: oblique;
+    border-radius: 12px;
+    box-shadow: -1px 19px 14px 5px rgb(226 244 15 / 91%), -1px -8px 50px 7px rgb(120 40 176 / 77%);
+    background-color: #4776c2;
+    opacity: 0.6;
+    cursor: not-allowed
 }
 
 
