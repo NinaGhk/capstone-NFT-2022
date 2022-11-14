@@ -1,0 +1,32 @@
+.HomePage {
+    background-size: 99%;
+    z-index: 1000;
+    height: 100vh;
+    background-color: indigo;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Times New Roman",Times, Serif;
+    background-attachment: fixed;
+}
+.homePage-list{
+    display: flex;
+    justify-content: space-evenly;
+    color:#61dafb;
+    width: 100%;
+    top: 27px;
+    font-family: "Cambria Math" ;
+}
+
+.badge text-bg-warning{
+    badge-font-size: .99em;
+    badge-font-weight: font-weight-bold;
+    --bs-badge-color: White;
+    badge-padding-y: .35em;
+    badge-padding-x: .65em;
+    badge-border-radius: border-radius;
+}
+
+
+

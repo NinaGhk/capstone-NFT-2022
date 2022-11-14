@@ -18,9 +18,11 @@ public class NFTCollectionsController {
         this.collectionsService= service;
     }
 
+
     @GetMapping
     public List<NFTCollectionsElement> getNftsByQuery(){
         return collectionsService.getNftsByQuery("");
     }
+    }
 
-}
+

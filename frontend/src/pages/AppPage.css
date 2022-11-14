@@ -1,0 +1,27 @@
+
+.image-button {
+
+    background-image: url("https://en.cryptonomist.ch/wp-content/uploads/2022/08/nft-hacker-1140x600.jpg.webp");
+    background-size: cover;
+    z-index: 1000;
+    height: 1100vh;
+    min-width: 800px;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: fixed;
+}
+.App-title{
+    letter-spacing: 55px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px chartreuse;
+    font-style: italic;
+    border-width: 25px 10px 4px 35px;
+    border-width: 400px 600px;
+    border: 1px solid;
+    border: blueviolet;
+    transform: rotateX(30deg);
+
+    background-color: black;
+
+}
+
