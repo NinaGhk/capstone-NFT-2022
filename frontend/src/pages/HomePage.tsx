@@ -6,7 +6,7 @@ import {FavoriteNft} from "../model/FavoriteNft";
 import Footer from "../components/Footer";
 import "./HomePage.css";
 import Carousel from "../components/Carousel";
-import {CollectionNft} from "../model/CollectionNft";
+
 
 
 
@@ -35,11 +35,11 @@ type HomePageProps ={
              <Carousel/>
              <div className="HomePage">
                  <div className={"homePage-list"}>
-                     <button type = "button"className={"favorite"} onClick ={handleClick1}>Favorite<span className="badge text-bg-warning"></span>
+                     <button type = "button"className={"favorite-name"} onClick ={handleClick1}>Favorite<span className="badge text-bg-warning"></span>
                      </button>
-                     <button className={"collection"} onClick ={handleClick2}>Collection</button>
-                     <button className={"search"} >Search</button>
-                     <button className={"logIn"} >Login</button>
+                     <button className={"collection-name"} onClick ={handleClick2}>Collection</button>
+                     <button className={"search-name"} >Search</button>
+                     <button className={"logIn-name"} >Login</button>
                  </div>
 
                  <div>

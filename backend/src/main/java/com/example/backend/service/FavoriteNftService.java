@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+
 @Service
 public class FavoriteNftService {
 
@@ -19,6 +20,11 @@ public class FavoriteNftService {
 
     public List<FavoriteNft> getAllNfts(){return favoriteNftRepo.findAll();}
 
-
-    /* public void deleteNft(String name) {return; favoriteNftRepo.deleteByName(name);}*/
+    public void deleteNft(String id) {
+        favoriteNftRepo.deleteById(id);
+    }
 }
+
+
+
+

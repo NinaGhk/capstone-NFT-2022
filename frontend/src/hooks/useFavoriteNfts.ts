@@ -5,7 +5,16 @@ import {FavoriteNft} from "../model/FavoriteNft";
 
 export default function useFavoriteNfts(){
 
-    const [favoriteNfts,setFavoriteNfts] =useState([])
+    const [favoriteNfts,setFavoriteNfts] =useState<FavoriteNft[]>([])
+
+
+    let favoriteNft!: FavoriteNft;
+
+
+    useEffect(()=>{ axios.get("/api/nft/favorite")
+        .then((response)=> response.data)
+        .then((favoriteNfts)=>setFavoriteNfts(favoriteNfts))},[]);
+
 
     const  getAllNfts =()=> {
         axios.get("/api/nft/favorite")
@@ -15,11 +24,24 @@ export default function useFavoriteNfts(){
     }
 
 
+
     const addNft = (newFavoriteNft: FavoriteNft)=>{
         axios.post("/api/nft/favorite",newFavoriteNft)
              .then(response => response.data)
              .then(getAllNfts)
              .catch(console.error)
     }
-    return {getAllNfts,addNft,favoriteNfts};
-}
+
+    const deleteNft =(id:string)=>{
+        axios.delete("/api/nft/favorite/" + id )
+            .then(response => response.data)
+            .then(getAllNfts)
+            .catch(console.error)
+
+    }
+    return {getAllNfts,addNft,favoriteNfts,deleteNft,favoriteNft};}
+
+
+
+
+
