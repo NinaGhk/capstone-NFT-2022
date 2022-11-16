@@ -1,5 +1,5 @@
 import {Container, Row} from "react-bootstrap";
-import React, {useEffect, useState} from "react";
+import React, {useEffect,} from "react";
 import {FavoriteNft} from "../model/FavoriteNft";
 import FavoriteGallery from "../components/FavoriteGallery";
 
