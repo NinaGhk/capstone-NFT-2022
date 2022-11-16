@@ -10,7 +10,7 @@ type CollectionProps ={
 }
 
 function CollectionPage (props: CollectionProps){
-    /* tslint:disable-next-line */
+    /* eslint-disable-next-line */
     useEffect(()=>{props.getAllCollection()},[])
 
 

@@ -12,7 +12,7 @@ type FavoriteProps ={
 }
 
 function FavoritePage (props: FavoriteProps){
-    /* tslint:disable-next-line */
+    /*eslint-disable-next-line*/
     useEffect(()=>{props.getAllFavorite()},[])
 
 
