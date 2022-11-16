@@ -29,6 +29,7 @@ export  default function FavoriteCard(props: FavoriteCardProps){
                 <h5 className="card-name">{props.favoriteNft.name}</h5>
                 <p className="card-text">{props.favoriteNft.description}</p>
                 <p className="card-text"><small className="text-muted">Last updated 30 second ago</small></p>
+                <div className="delete-button"></div>
                 <button onClick={()=>props.deleteNft(props.favoriteNft.id)}>Delete</button>
                 <label className="like">
                     <input type="checkbox"/>
