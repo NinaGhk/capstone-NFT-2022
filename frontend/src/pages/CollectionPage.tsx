@@ -1,5 +1,5 @@
 import {Container, Row} from "react-bootstrap";
-import React, {useEffect} from "react";
+import React,{useEffect} from "react";
 import {CollectionNft} from "../model/CollectionNft";
 import CollectionGallery from "../components/CollectionGallery";
 
@@ -10,7 +10,7 @@ type CollectionProps ={
 }
 
 function CollectionPage (props: CollectionProps){
-
+    /* tslint:disable-next-line */
     useEffect(()=>{props.getAllCollection()},[])
 
 

@@ -4,22 +4,15 @@ import {FavoriteNft} from "../model/FavoriteNft";
 import FavoriteGallery from "../components/FavoriteGallery";
 
 
-
-
-
 type FavoriteProps ={
     favoriteNfts: FavoriteNft[];
     getAllFavorite: ()=>void
     addNft:()=>void
     deleteNft:(id:string) =>void;
-
-
-
 }
 
 function FavoritePage (props: FavoriteProps){
-
-
+    /* tslint:disable-next-line */
     useEffect(()=>{props.getAllFavorite()},[])
 
 
