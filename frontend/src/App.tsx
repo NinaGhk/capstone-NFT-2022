@@ -3,7 +3,6 @@ import './App.css';
 import {HashRouter, Route, Routes} from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AppPage from "./pages/AppPage"
-
 import useFavoriteNfts from "./hooks/useFavoriteNfts";
 import FavoritePage from "./pages/FavoritePage";
 import useCollectionNft from "./hooks/useCollectionNft";
@@ -37,6 +36,6 @@ export default function App() {
     );
 };
 
-//markHeartAsFavorite={getAllNfts}
+
 
 
